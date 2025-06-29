@@ -17,30 +17,39 @@
         <option value="filme">Filmes</option>
         <option value="serie">Séries</option>
         <option value="acao">Ação</option>
+        <option value="drama">Drama</option>
+        <option value="infantil">Infantil</option>
+        <option value="terror">Terror</option>
+        <option value="comedia">Comedia</option>
+        <option value="documentario">Documentário</option>
       </select>
       <button onclick="alternarTema()">🌓</button>
     </div>
   </header>
 
-  <section id="carousel" class="carousel-container">
-    <!-- Cards adicionados via JS -->
+  <section class="carousel">
+    <button class="carousel-btn left-btn" onclick="scrollCarousel('carousel-container', -1)">←</button>
+    <button class="carousel-btn right-btn" onclick="scrollCarousel('carousel-container', 1)">→</button>
+    <div class="carousel-container" id="carousel-container">
+      <!-- Cards inseridos via JS -->
+    </div>
   </section>
 
   <section class="favoritos">
     <h2>❤️ Seus Favoritos</h2>
-    <div id="favoritosContainer" class="grid"></div>
+    <div class="favoritos-container" id="favoritosContainer"></div>
   </section>
 
   <section class="sobre">
-    <h2>📘 Sobre</h2>
-    <p>Este catálogo apresenta atualizações semanais de filmes e séries. Curta seus favoritos, filtre por categoria e compartilhe com amigos!</p>
+    <h2>📘 Sobre o Projeto</h2>
+    <p>Este site foi criado para amantes de filmes e séries que querem acompanhar atualizações semanais de forma simples e visual. Nosso catálogo é atualizado toda Semana e você pode curtir seus títulos favoritos para guardá-los e compartilhar com amigos!</p>
   </section>
 
   <section class="contato">
     <h2>📩 Contato</h2>
     <div class="social">
-      <a href="mailto:contato@exemplo.com" target="_blank"><i class="fas fa-envelope"></i></a>
-      <a href="https://wa.me/5599999999999" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="mailto:gpsiptvhd@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+      <a href="https://contate.me/suportepplaytv" target="_blank"><i class="fab fa-whatsapp"></i></a>
       <a href="https://instagram.com/seuperfil" target="_blank"><i class="fab fa-instagram"></i></a>
     </div>
     <form onsubmit="enviarMensagem(); return false;">
@@ -52,7 +61,7 @@
   </section>
 
   <footer>
-    <p>© 2025 Catálogo Semanal • Criado com ❤</p>
+    <p>© 2025 Catálogo de Séries e Filmes • Desenvolvido por Felipe Souza</p>
   </footer>
 
   <script src="script.js"></script>

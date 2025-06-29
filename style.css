@@ -54,6 +54,21 @@ input, select {
   border-radius: 10px;
 }
 
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.7);
+  border: none;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.left-btn { left: 0; }
+.right-btn { right: 0; }
+
 .card {
   flex: 0 0 auto;
   width: 200px;

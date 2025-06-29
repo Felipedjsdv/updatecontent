@@ -2,7 +2,7 @@ function criarCard(c) {
   const card = document.createElement('div');
   card.className = 'card';
   card.setAttribute('data-titulo', c.titulo.toLowerCase());
-  card.setAttribute('data-categoria', c.tipo);
+  card.setAttribute('data-categoria', c.categoria);
   card.innerHTML = `
     <img src="${c.img}" alt="${c.titulo}" loading="lazy">
     <h3>${c.titulo}</h3>
@@ -22,7 +22,7 @@ function carregarConteudos() {
   fetch('conteudos.json')
     .then(res => res.json())
     .then(data => {
-      const container = document.getElementById('carousel');
+      const container = document.getElementById('carousel-container');
       container.innerHTML = '';
       data.forEach(c => container.appendChild(criarCard(c)));
     });
@@ -71,6 +71,11 @@ function filtrarConteudo() {
     const mostra = titulo.includes(busca) && (filtro === '' || categoria === filtro);
     card.style.display = mostra ? 'block' : 'none';
   });
+}
+
+function scrollCarousel(id, direction) {
+  const container = document.getElementById(id);
+  container.scrollLeft += direction * 300;
 }
 
 function enviarMensagem() {
