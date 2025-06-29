@@ -1,0 +1,37 @@
+[
+  {
+    "titulo": "Round 6",
+    "tipo": "serie",
+    "categoria": "acao",
+    "sinopse": "Gi-hun fica devastado pela perda de seu melhor amigo e mergulha em profundo desespero após descobrir que o Mestre do Jogo escondeu sua verdadeira identidade para se infiltrar secretamente no jogo.",
+    "img": "https://cinemaeafins.com.br/wp-content/uploads/2025/05/round-6-temporada-3-poster.webp"
+  },
+  {
+    "titulo": "Stranger Things",
+    "tipo": "serie",
+    "categoria": "terror",
+    "sinopse": "Crianças enfrentam eventos sobrenaturais em Hawkins.",
+    "img": "https://via.placeholder.com/200x300?text=Stranger+Things"
+  },
+  {
+    "titulo": "Top Gun: Maverick",
+    "tipo": "filme",
+    "categoria": "acao",
+    "sinopse": "Pilotos de elite enfrentam missões perigosas.",
+    "img": "https://via.placeholder.com/200x300?text=Top+Gun"
+  },
+  {
+    "titulo": "Barbie",
+    "tipo": "filme",
+    "categoria": "comedia",
+    "sinopse": "Uma jornada divertida do mundo das bonecas para o real.",
+    "img": "https://via.placeholder.com/200x300?text=Barbie"
+  },
+  {
+    "titulo": "Breaking Bad",
+    "tipo": "serie",
+    "categoria": "drama",
+    "sinopse": "Professor vira fabricante de metanfetamina.",
+    "img": "https://via.placeholder.com/200x300?text=Breaking+Bad"
+  }
+]

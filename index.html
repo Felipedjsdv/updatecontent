@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo Semanal</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <h1>🎬 Catálogo Semanal</h1>
+    <div class="top-actions">
+      <input type="text" id="searchInput" placeholder="🔍 Buscar título..." onkeyup="filtrarConteudo()" />
+      <select id="categoryFilter" onchange="filtrarConteudo()">
+        <option value="">Todos</option>
+        <option value="filme">Filmes</option>
+        <option value="serie">Séries</option>
+        <option value="acao">Ação</option>
+      </select>
+      <button onclick="alternarTema()">🌓</button>
+    </div>
+  </header>
+
+  <section id="carousel" class="carousel-container">
+    <!-- Cards adicionados via JS -->
+  </section>
+
+  <section class="favoritos">
+    <h2>❤️ Seus Favoritos</h2>
+    <div id="favoritosContainer" class="grid"></div>
+  </section>
+
+  <section class="sobre">
+    <h2>📘 Sobre</h2>
+    <p>Este catálogo apresenta atualizações semanais de filmes e séries. Curta seus favoritos, filtre por categoria e compartilhe com amigos!</p>
+  </section>
+
+  <section class="contato">
+    <h2>📩 Contato</h2>
+    <div class="social">
+      <a href="mailto:contato@exemplo.com" target="_blank"><i class="fas fa-envelope"></i></a>
+      <a href="https://wa.me/5599999999999" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://instagram.com/seuperfil" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+    <form onsubmit="enviarMensagem(); return false;">
+      <input type="text" placeholder="Seu nome" required />
+      <input type="email" placeholder="Seu e-mail" required />
+      <textarea placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Catálogo Semanal • Criado com ❤</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
