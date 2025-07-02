@@ -10,6 +10,7 @@ function criarCard(c) {
     <div class="buttons">
       <button onclick="curtir(this)">👍</button>
       <button onclick="descurtir(this)">👎</button>
+      ${c.trailer ? `<button onclick="verTrailer('${c.trailer}')">🎬 Ver Trailer</button>` : ''}
     </div>
   `;
   const status = localStorage.getItem(c.titulo);
@@ -83,3 +84,17 @@ function enviarMensagem() {
 }
 
 window.onload = carregarConteudos;
+
+function verTrailer(url) {
+  const modal = document.getElementById('trailerModal');
+  const iframe = document.getElementById('trailerFrame');
+  iframe.src = url;
+  modal.style.display = 'flex';
+}
+
+function fecharTrailer() {
+  const modal = document.getElementById('trailerModal');
+  const iframe = document.getElementById('trailerFrame');
+  iframe.src = '';
+  modal.style.display = 'none';
+}

@@ -64,6 +64,14 @@
     <p>© 2025 Catálogo de Séries e Filmes • Desenvolvido por Felipe Souza</p>
   </footer>
 
+  <div id="trailerModal" class="modal" onclick="fecharTrailer()">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <iframe id="trailerFrame" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+      <button onclick="fecharTrailer()">Fechar</button>
+    </div>
+  </div>
+
+
   <script src="script.js"></script>
 </body>
 </html>
